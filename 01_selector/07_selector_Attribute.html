@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/Attribute</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector7.js"></script>
+<link rel="stylesheet" href="css/selector7.css">
+</head>
+<body>
+    <div id="gallery">
+        <img src="images/img3.gif" alt="#">이미지1
+        <img src="images/img4.gif" alt="#">이미지2
+    </div><!--#gallery-->
+    
+    <div id="txt">
+        <p id="html1-html51">Js1</p>
+        <p class="html1-html51 css1">Js2</p>
+        <p class="html1 css1">Js3</p>
+        <p id="html1">Js4</p>
+        <p class="css1">Js5</p>
+        <p id="html51-html1">Js6</p>
+    </div><!--#txt-->
+    
+    <div id="link1">
+        <a href="http://" id="page1" title="이동1" target="_blank">확인1</a>
+        <a href="#page1" id="page2" title="이동2" target="_blank">확인2</a>
+        <a href="#page3" id="page3" title="이동" target="_self">확인3</a>
+        <a href="http://" id="page4" title="이동" target="_parent">확인4</a>
+        <a href="#" title="이동5" target="_self">확인5</a>
+    </div><!--#link1-->
+    
+    <h3>문제</h3>
+    <div id="wrap">
+        <h4 id="attr1"><img src="images/img4.gif" alt="#"><br>1</h4>
+        <p class="attr2"><img src="images/img2.gif" alt="#"><br>2</p>
+        <p class="attr3"><img src="images/img1.gif" alt="#"><br>3</p>
+        <p id="attr4"><img src="images/img3.gif" alt="#"><br>4</p>
+        <p id="attr5"><img src="images/img2.gif" alt="#"><br>5</p>
+        <p id="attr6"><img src="images/img1.gif" alt="#"><br>6</p>
+        <p id="attr7"><img src="images/img4.gif" alt="#"><br>7</p>
+    </div><!--#wrap-->
+
+    <div id="ex">
+        <p>1: id가 있는 selector(border색 변경) <br>$(selector[name]).method() : name(속성)</p>
+        <p>2: class가 있는 selector(border색 변경)<br>$(selector[name]).method() : name(속성)</p>
+        <p>3: id가 attr6이 아닌 selector(border색 변경) 1,2,3,4,5,7<br>$(selector[name!="value"]).method() value와 일치하지 않는 selector</p>
+        <p>4: src가 4를  포함하는 selector(이미지 크기 변경 50 50)<br>$(selector[name*="value"]).method() value를 포함하는 selector, value와 일치하는 selector</p>
+        <p>5: class가 attr로 시작하는 selector(border색 변경)<br>$(selector[name^="value"]).method() value로 시작하는 selector, value와 일치하는 selector</p>
+        <p>6: src가 gif로 끝나는 selector(이미지 크기 변경 50 50)<br>$(selector[name$="value"]).method() value로 끝나는 selector, value와 일치하는 selector</p>
+    </div>
+</body>
+</html>

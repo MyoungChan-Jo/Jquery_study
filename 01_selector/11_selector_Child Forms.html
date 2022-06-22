@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/Forms</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector11.js"></script>
+</head>
+<body>
+<form action="#" method="post">
+    <p>수강과목 선택(radio)<br>
+        <input type="radio" name="chk1">illustrator
+        <input type="radio" name="chk1" checked>photoshop
+        <input type="radio" name="chk1">flash
+    </p>
+    <p>수강과목 선택(checkbox)<br>
+        <input type="checkbox" name="chk1">illustrator
+        <input type="checkbox" name="chk1">photoshop
+        <input type="checkbox" name="chk1" checked>flash
+    </p>
+    <p>수강과목 선택(select)<br>
+        <select size="5" multiple>
+            <option value="illustrator">illustrator</option>
+            <option value="photoshop" selected>photoshop</option>
+            <option value="flash">flash</option>
+            <option value="dreamweaver" selected>dreamweaver</option>
+            <option value="web">web</option>
+        </select>
+    </p>
+    <p>웹표준<input type="text" value="웹표준"></p>
+    <p>웹접근성<input type="text" value="웹접근성" disabled></p>
+    <p>웹접근성<input type="text" value="웹접근성" enabled></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/Child Filter</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector9.js"></script>
+</head>
+<body>
+<div id="ex1">
+    <ul class="list1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul><!--.list1-->
+    <ul class="list2">
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul><!--.list2-->
+</div><!--#ex1-->
+<hr>
+<div id="ex2">
+    <p>내용 1 p</p>
+    <div style="border:1px solid #ff9966;">
+        <p>내용 2 p</p>
+        <span>내용 3 span</span>
+        <p>내용 4 p</p>
+    </div>
+    <div style="border:1px solid green;">
+        <span>내용 5 span</span>
+        <p>내용 6 p</p>
+        <p>내용 7 p</p>
+    </div>
+</div><!--#ex2-->
+<hr>
+    <div id="ex3">
+        <p>p1</p>
+        <div style="border:1px solid #ccccff;">
+            <p>div_p1</p>
+            <p>div_p2</p>
+            <p>div_p3</p>
+            <p>div_p4</p>
+        </div>
+        <div style="border:1px solid #ff99ff;">
+            <span>div_span</span>
+            <p>div_p1</p>
+            <p>div_p2</p>
+            <p>div_p3</p>
+            <p>div_p4</p>
+        </div>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <div style="border:1px solid #ff9999;">
+            <p>div_p1</p>
+        </div>
+        <div style="border:1px solid #cc99cc;">
+            <p>div_p1</p>
+        </div>
+    </div><!--#ex3-->
+    <hr>
+    <div id="ex4">
+        <ul class="list3">
+            <li>jquery <em>jquery</em> jquery jquery</li>
+            <li>jquery <span>jquery</span> jquery <span>jquery</span></li>
+            <li>jquery jquery jquery jquery</li>
+            <li>jquery <strong>jquery</strong> jquery jquery</li>
+            <li>jquery <strong>jquery</strong> jquery <span>jquery</span></li>
+        </ul><!--.list3-->
+        <p>jquery jquery <strong>jquery</strong></p>
+        <p>jquery <strong>jquery</strong><strong>jquery</strong></p>
+    </div><!--#ex4-->
+</body>
+</html>

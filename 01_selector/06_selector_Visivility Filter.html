@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/Visibility Filters</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector6.js"></script>
+<style>
+    #ex1{height:170px; border:1px solid green;}
+    .none1{display:none;}
+    .none2{visibility:hidden;}
+    
+    #ex2{height:170px; border:1px solid green;}
+    .none_img{display:none;}
+    
+    #ex3{height:700px;}
+    #photo1 img, #photo2 img{display:none;}
+</style>
+</head>
+<body>
+    <section id="ex1">
+        <h5>웹디자인</h5>
+        <p>웹표준</p>
+        <p>웹접근성</p>
+        <p class="none1">HTML5</p>
+        <p class="none2">젠코딩</p>
+    </section><!--#ex1-->
+    
+    <section id="ex2">
+        <div id="photo">
+            <img src="images/img1.gif" alt="#">
+            <img src="images/img2.gif" alt="#" class="none_img">
+            <img src="images/img3.gif" alt="#">
+        </div><!--#photo-->
+    </section><!--#ex2-->
+    
+    <div id="ex3">
+        <div id="photo1">
+            <img src="images/t_img1.jpg" alt="#" class="img1_1">
+            <img src="images/t_img2.jpg" alt="#" class="img1_2">
+            <img src="images/t_img3.jpg" alt="#" class="img1_3">
+            <img src="images/t_img4.jpg" alt="#" class="img1_4">
+        </div><!--#photo1-->
+        
+        <div id="photo2">
+            <img src="images/t_img2.jpg" alt="#" class="img1_1">
+            <img src="images/t_img1.jpg" alt="#" class="img1_2">
+            <img src="images/t_img4.jpg" alt="#" class="img1_3">
+            <img src="images/t_img3.jpg" alt="#" class="img1_4">
+        </div><!--#photo2-->
+    </div><!--#ex3-->
+</body>
+</html>

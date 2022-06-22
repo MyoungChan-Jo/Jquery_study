@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/basics</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector1.js"></script>
+<link rel="stylesheet" href="css/selector1.css">
+</head>
+<body>
+<!--××××××××××××××××××× *selector 확인 ×××××××××××××××××××-->
+    <ul class="ex1">
+        <li>jquery<strong>jquery</strong>jqueryjquery</li>
+        <li>jquery<em>jquery</em>jqueryjquery</li>
+        <li>jqueryjqueryjqueryjquery</li>
+        <li>jquery<span>jquery</span>jquery<em>jquery</em></li>
+    </ul><!--#ex1-->
+    
+<!--×××××××××××××××× class selector 확인 ××××××××××××××××-->
+    <div id="img_wrap">
+        <img src="images/img1.gif" alt="#" width="120" height="100" class="img1 photo1">
+        <img src="images/img2.gif" alt="#" width="120" height="100" class="img1 photo2">
+        <img src="images/img3.gif" alt="#" width="120" height="100" class="img1 photo1">
+        <img src="images/img4.gif" alt="#" width="120" height="100" class="img1 photo2">
+    </div><!--#img_wrap-->
+    
+ <!--×××××××××××××××× element selector 확인 ××××××××××××××××-->
+    <header>
+        <h1>웹디자인</h1>
+        <h2>웹접근성</h2>
+        <h3>웹표준</h3>
+    </header>
+     
+<!--×××××××××××××××× ID selector 확인 ××××××××××××××××-->
+    <nav class="ex2">
+        <ul>
+            <li id="ex2_1">HTML5</li>
+            <li id="ex2_2">CSS3</li>
+            <li id="ex2_3">JQUERY</li>
+        </ul>
+    </nav><!--.ex2-->
+    
+    <!--×××××××××××××××× selector1, selectorN 확인 ××××××××××××××××-->
+    <div class="box1">HTML5</div><!--.box1-->
+    <div class="box2">CSS3</div><!--.box2-->
+    <div id="box3">JQUERY</div><!--#box3-->
+    
+</body>
+</html>

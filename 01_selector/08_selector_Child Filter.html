@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector/Child Filter</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/selector8.js"></script>
+<link rel="stylesheet" href="css/selector8.css">
+</head>
+<body>
+<div id="ex1">
+    <ul class="list1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul><!--.list1-->
+    <ul class="list2">
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul><!--.list2-->
+</div><!--#ex1-->
+<hr>
+<div id="ex2">
+    <p>내용1</p>
+     <div style="border:1px solid #ff9966;">
+         <p>내용2 p</p>
+         <span>내용3 span</span>
+         <p>내용4 p</p>
+     </div>
+    <div style="border:1px solid #ff9966;">
+    <p>내용5 p</p>
+         <span>내용6 span</span>
+         <p>내용7 p</p>
+    </div>
+</div><!--#ex2-->
+
+<h4><!--정리-->
+    //**Child Filter<br>
+    //1. :first-child - 부모의 첫번째 자식요소<br>
+    //$(selector:first-child).method() <br>
+    <br><br>
+    //2. :last-child  - 부모의 마지막번째 자식요소<br>
+    //$(selector:last-child).method()<br>
+    <br><br>
+    //3. :nth-child - 유형에 관계없이 부모의 n번째 자식인 모든 요소<br>
+    //$(selector:nth-child(n)).method() n번째<br>
+    //$(selector:nth-child(even)).method() 짝수번째<br>
+    //$(selector:nth-child(odd)).method() 홀수번째<br>
+    //$(selector:nth-child(숫자n)).method() n번째<br>
+</h4>
+<hr>
+<h3>*문제*</h3>
+<div id="ex3">
+    <table id="web">
+        <caption>강의시간표</caption>
+        <tr>
+            <th>번호</th>
+            <th>과목</th>
+            <th>담당자</th>
+            <th>전화번호</th>
+            <th>비고</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>JQUERY</td>
+            <td>이젠아카데미</td>
+            <td>02-716-0000</td>
+            <td>3.5H</td>
+        </tr>
+    </table><!--#web-->
+</div><!--#ex3-->
+
+<h4>
+    1. 번호, 담당자, 비고, 셀에(글자색 #cc66ff)<br>
+    2. 과목, 전화번호 셀에(글자색 #66cc66)<br>
+    3. 1,3,5,7,9번 행 전체에(배경색 #ff9999 글자색 #990099)<br>
+    4. 2.4.6.8.10번 행 전체에(배경색 #cc9933 글자색 #ff0066)
+    
+</h4>
+</body>
+</html>
