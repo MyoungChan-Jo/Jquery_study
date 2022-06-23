@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.evt2{width:1000px; height:500px; background-color:pink;}
+.evt3{width:50px; height:50px; background-color:orange; position:fixed; left:50%; top:50%; transform:translate(-50%,-50%);}
+.box{border:3px solid #333333; width:100px; height:100px; float:left; margin:5px; cursor:pointer;}
+.clear{clear:both;}
+
+/*menu*/
+.menu{padding-left:0; /*background-color:yellow; */height:30px;}
+.menu li{list-style:none; float:left; margin:0px 5px;}
+.menu li a{text-decoration:none; color:#000000;}
+
+.link_con{clear:both;}
+.i_frm{border:1px solid #999999;}
+
+/*wrap1*/
+.photo1, .photo2, .photo3{width:150px; height:150px; cursor:pointer; margin:5px;}
+/*wrap2*/
+.txt1, .txt2, .txt3, .txt4{border:1px solid #cccccc; width:188px; height:198px; float:left; cursor:pointer; margin:5px; text-align:center;}
+.txt1{background:url(../images/bg1.jpg) no-repeat;}
+.txt2{background:url(../images/bg2.jpg) no-repeat;}
+.txt3{background:url(../images/bg3.jpg) no-repeat;}
+.txt4{background:url(../images/bg4.jpg) no-repeat;}
