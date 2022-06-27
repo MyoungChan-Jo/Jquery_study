@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>random</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+function r_txt(){
+	//console.log(Math.random());
+	//console.log(Math.random()*3);
+	//console.log(Math.random()*10+5);
+	console.log(Math.ceil(Math.random()*5));
+}
+	//1초마다 r_txt를 실행
+	setInterval("r_txt()",1000);
+</script>
+</head>
+<body>
+	<p>
+		//Math.random()       	 	    0포함~1제외 사이 모든 난수 생성<br>
+		//Math.random()*3   		   0포함 3 제외 사이 난수<br>
+		//Math.random()*10+5 		5포함~15제외 사이<br>
+		//Math.random()*10+3 		3포함 13제외 사이<br>
+		<br>
+		//setInterval("함수",대기시간); 대기시간(밀리초)마다 함수 반복 실행<br>
+		<br>
+		*소수점<br>
+		Math.floor() 내림<br>
+		Math.round() 반올림<br>
+		Math.ceil() 올림<br>
+	</p>
+</body>
+</html>

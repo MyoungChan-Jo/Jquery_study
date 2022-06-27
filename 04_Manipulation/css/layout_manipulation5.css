@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body,div,p,img,ul,li,a,span{margin:0px; padding:0px;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+img{border:none;}
+
+/*#ex1*/
+#ex1{border:1px solid #cccccc; margin:20px 0px; width:1090px; height:198px; position:relative;}
+
+.photo1{border:1px solid blue; width:980px; height:198px; position:absolute; left:55px; top:0px;}
+.photo1 img{float:left; margin-left:10px;}
+.photo1 img:first-child{margin-left:0px;}
+.btn1_1{position:absolute; left:0px; top:65px; cursor:pointer;}
+.btn1_2{position:absolute; right:0px; top:65px; cursor:pointer;}
+
+/*#ex2*/
+#ex2{border:1px solid #cccccc; margin:20px 0px; width:700px; height:198px; position:relative;}
+
+.photo2{border:1px solid blue; width:584px; height:198px; position:absolute; left:55px; top:0px; overflow:hidden;}
+.photo2 img{float:left; margin-left:10px;}
+.photo2 img:first-child{margin-left:0px;}
+.btn2_1{position:absolute; left:0px; top:65px; cursor:pointer;}
+.btn2_2{position:absolute; right:0px; top:65px; cursor:pointer;}
+
+/*#ex3*/
+#ex3{border:1px solid #cccccc; margin:20px 0px 20px 55px; width:584px; height:198px; position:relative;}
+
+.photo3{border:1px solid blue; width:584px; height:198px; position:absolute; left:0px; top:0px; overflow:hidden;}
+.photo3 img{float:left; margin-left:10px;}
+.photo3 img:first-child{margin-left:0px;}
+.btn3_1{position:absolute; z-index:2; left:30px; top:65px; cursor:pointer;}
+.btn3_2{position:absolute; z-index:2; right:30px; top:65px; cursor:pointer;}
+
+/*문제*/
+#ex4{ margin:20px 0px 20px 55px; width:188px; height:680px; position:relative;}
+.gallery4{padding-top:50px; width:188px; height:580px; overflow:hidden}
+.gallery4 img{float:left; margin:0px;}
+.btn4_1{position:absolute; transform:translate(-50%, 0); left:50%; top:0px; cursor:pointer;}
+.btn4_2{position:absolute; transform:translate(-50%, 0); left:50%; bottom:0px; cursor:pointer;}
+
+/*#ex5*/
+#ex5{border:1px solid red; width:564px; height:225px; margin:30px; position:relative;}
+.photo5{width:564px; height:225px; position:absolute; left:0px; top:0px; overflow:hidden;}
+.gallery5{width:564px; height:225px;}
+.gallery5 li{float:left; width:188px; height:225px;}
+.gallery5 li a{color:#cc0033;}
+.gallery5 li span{display:block; text-align:center;}
+.btn5_1{position:absolute; left:30px; top:65px; cursor:pointer; z-index:2;}
+.btn5_2{position:absolute; right:30px; top:65px;cursor:pointer; z-index:2;}
