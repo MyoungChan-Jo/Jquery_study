@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*reset*/
+
+/*ex1*/
+.num_btn{border:1px solid #666666; background-color:#999999; width:150px; height:30px; color:#ffffff; cursor:pointer; outline:none;}
+
+/*ex2*/
+#ex2{height:220px;}
+.box{border:3px solid #ff9933; width:150px; height:150px; float:left; margin:10px; padding:25px;}
+.evt{border:3px solid #cc99ff; width:150px; height:150px; display:block;}
+
+
+/*ex3*/
+#ex3{height:150px;}
+
+/*ex4, ex5*/
+#ex4, #ex5{background-color:pink; width:200px; height:200px; padding:10px; float:left; margin:100px;}
