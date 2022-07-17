@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>mousemove_이미지</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#wrap_img").append("<div class='box'></div>");
+        $("#wrap_img").mousemove(function(event){
+            var x = event.pageX;
+            var y = event.pageY;
+            $(".txt").text(x+","+y);//좌표확인
+            $(".box").css({left:30-(x/30),bottom:10-(y/30)});
+        });
+    });
+</script>
+<style>
+    body,div,img{margin:0; padding:0;}
+    html,body{height:100%;}
+    
+    .txt{position:fixed; left:20px; top:20px; font-size:50px; color:red; z-index:20;}/*임시좌표확인*/
+    #wrap_img{width:100%; height:100%; position:relative;}
+    #wrap_img img{width:100%; height:100%; position:absolute;}
+    .box{width:1800px; height:800px; border:1px solid red; margin:0 auto; background:url(images/bg.png) repeat; position:relative;}/*제이쿼리로 추가된 div*/
+</style>
+</head>
+<body>
+<span class="txt">.</span>
+<div id="wrap_img">
+    <img src="images/main_visual.jpg" alt="#">
+</div><!--wrap_img-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

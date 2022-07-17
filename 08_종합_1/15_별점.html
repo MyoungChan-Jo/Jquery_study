@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>별점</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<style>
+    .star{background:url(images/review2.png) no-repeat; width:50px; height:49px; display:inline-block; text-indent:-9999px; cursor:pointer;}
+    .on{background-image:url(images/review1.png);}
+</style>
+<script>
+    $(document).ready(function(){
+        $("#review1 span").click(function(){
+            $("#review1 span").removeClass("on");
+            $(this).addClass("on");
+            $(this).prevAll("span").addClass("on");//이전노드 전체
+        });
+    });
+</script>
+</head>
+<body>
+<p id="review1">
+    <span class="star on">별1</span>
+    <span class="star">별2</span>
+    <span class="star">별3</span>
+    <span class="star">별4</span>
+    <span class="star">별5</span>
+</p><!--review1-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>배경이미지고정</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<style>
+    body,section,div,h3,p{margin:0; padding:0;}
+    html,body{height:100%;}
+    
+    .con{height:100%; overflow:hidden; background-attachment:fixed; background-size:cover;}
+    .con.con1{background-image:url(images/bg_brand2.jpg);}
+    .con.con2{background-image:url(images/bg_brand3.jpg);}
+    .con.con3{background-image:url(images/bg_brand4.jpg);}
+    .con div{color:#ffffff; width:50%; text-align:center; position:relative; left:50%; top:50%; transform:translate(-50%,-50%);}
+</style>
+</head>
+<body>
+<section class="con con1">
+    <div>
+        <h3>제목</h3>
+        <p>내용 입니다.</p>
+    </div>
+</section>
+<section class="con con2">
+    <div>
+        <h3>제목</h3>
+        <p>내용 입니다.</p>
+    </div>
+</section>
+<section class="con con3">
+    <div>
+        <h3>제목</h3>
+        <p>내용 입니다.</p>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/js11.js"></script>
+<link rel="stylesheet" href="css/js11.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="top_wrap">
+        <h1><a href="#"><img src="images/login_logo.gif" alt="#" width="219" height="32"></a></h1>
+        <p class="top_home"><a href="#">홈으로 가기</a></p>
+    </div><!--top_wrap-->
+    <p class="main_img">
+        <img src="images/main_img.jpg" alt="#" width="540" height="120">
+    </p><!--main_img-->
+    <ul id="login_list">
+        <li><a href="#login1" class="selected1">회원로그인</a></li>
+        <li><a href="#login2">비회원(주문조회)</a></li>
+    </ul><!--login_list-->
+    <div id="login_con">
+        <div id="login1" class="login_box">
+            <form action="#" method="post">
+                <p><input type="text" placeholder="아이디" id="u_id" autocomplete="off"></p>
+                <p><input type="password" placeholder="비밀번호" id="u_pwd" autocomplete="off"></p>
+                <p id="btn_wrap1">
+                    <input type="button" id="s_btn1" value="로그인">
+                    <input type="button" id="s_btn2" value="로그인">
+                </p><!--btn_wrap1 로그인버튼-->
+                <p id="chk_wrap1">
+                    <input type="checkbox" name="chk" id="chk1" value="1">
+                    <label for="chk1" class="type01 type02">아이디저장</label>
+                    <input type="checkbox" name="chk" id="chk2" value="2">
+                    <label for="chk2" class="type01 type03">로그인 상태 유지</label>
+                </p><!--chk_wrap1-->
+                <p>
+                    <a href="#" class="search1">아이디/비밀번호 찾기</a>
+                    <a href="#" class="join1">아직 회원이 아니세요?</a>
+                </p>
+            </form>
+        </div><!--login1 login_box 회원로그인전체-->
+        <div id="login2" class="login_box">
+            <form action="#" method="post">
+                <p><input type="text" placeholder="주문번호" id="u_order" autocomplete="off"></p>
+                <div id="tel_wrap">주문자 휴대폰 번호<br>
+                    <p class="tel1_wrap">
+                        <select id="tel1">
+                            <option>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                        </select><span> - </span>
+                    </p><!--tel1_wrap-->
+                    <p class="tel2_wrap">
+                        <input type="tel" title="전화번호 앞자리" id="tel2" autocomplete="off">
+                        <span> - </span>
+                    </p><!--tel2_wrap-->
+                    <p class="tel3_wrap">
+                        <input type="tel" title="전화번호 뒷자리" id="tel3" autocomplete="off">
+                    </p><!--tel3_wrap-->
+                </div><!--tel_wrap 주문자 휴대폰 번호-->
+                <p id="btn_wrap2">
+                    <input type="button" id="s_btn3" value="로그인">
+                    <input type="button" id="s_btn4" value="로그인">
+                </p><!--btn_wrap2 로그인버튼-->
+                <p>
+                    <a href="#" class="search2">아이디/비밀번호 찾기</a>
+                    <a href="#" class="join2">아직 회원이 아니세요?</a>
+                </p>
+            </form>
+        </div><!--login2 login_box 비회원(주문조회)전체-->
+    </div><!--login_con-->
+</div><!--wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

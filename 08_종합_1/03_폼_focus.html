@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>focus이동</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //폼 이벤트
+        //$(selector).focus() 포커스가 있을 때
+        //$(selector).blur() 포커스를 잃을 때
+        //keyup / ketdown / keypress =>키보드 이벤트
+        //event.which 누른 키보드 키 반환
+        $("#name1").focus();
+        $("#name1").keydown(function(event){
+           $(".test").text(event.which);
+            if(event.which==13){
+                $("#name2").focus();
+            }
+        });
+        $("#name2").keydown(function(event){
+            if(event.which==13){
+                $("#name3").focus();
+            }
+        });
+        $("#name3").keydown(function(event){
+            if(event.which==13){
+                alert("끝입니다.");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+<p class="test">.</p>
+<p>이름 : <input type="text" id="name1"></p>
+<p>이름 : <input type="text" id="name2"></p>
+<p>이름 : <input type="text" id="name3"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
