@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>each/end/is</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/js41.js"></script>
+<link rel="stylesheet" href="css/js41.css">
+</head>
+<body>
+<div id="wrap">
+    <p><button type="button" class="btn">클릭</button></p>
+    <p class="ex_t">확인1</p>
+    <p class="ex_t">확인2</p>
+    <p class="ex_t">확인3</p>
+    <p class="ex_t">확인4</p>
+    <p class="ex_t">확인5</p>
+</div><!--wrap-->
+<hr>
+<div id="wrap1">
+    <p><button type="button" class="btn1">실행</button></p>
+    <ul class="list1">
+        <li>html5</li>
+        <li>css3</li>
+        <li>query</li>
+    </ul><!--list1-->
+</div><!--wrap1-->
+<hr>
+
+<div id="wrap2">
+    <ul class="color2">
+        <li>#ff0099</li>
+        <li>#996666</li>
+        <li>#669933</li>
+        <li>rgb(153,0,0)</li>
+        <li>orange</li>
+    </ul><!--color2-->
+</div><!--wrap2-->
+<hr>
+
+<div id="wrap3">
+    <div data-bg="#ff0099">1</div>
+    <div data-bg="#996666">2</div>
+    <div data-bg="#669933">3</div>
+    <div data-bg="rgb(153,0,0)">4</div>
+    <div data-bg="orange">5</div>
+</div><!--wrap3-->
+<hr>
+
+<div id="wrap4">
+    <input type="text" class="wrap4_t">
+    <input type="text" class="txt4">
+    <input type="text" class="txt4">
+    <input type="text" class="txt4">
+</div><!--wrap4-->
+<hr>
+
+<div id="wrap5">
+    <input type="text" class="wrap5_t">
+    <input type="text" class="txt5">
+    <input type="text" class="txt5">
+    <input type="text" class="txt5">
+</div><!--wrap5-->
+<hr>
+
+<div id="wrap6">
+    <p class="txt6">1</p>
+    <p class="txt6">2</p>
+    <p class="txt6">3</p>
+    <p class="txt6">4</p>
+    <p class="txt6">5</p>
+    <p class="btn_wrap6">
+        <input type="button" class="btn6_1" value="실행">
+        <input type="button" class="btn6_2" value="재시작">
+    </p>
+</div><!--wrap6-->
+<hr>
+
+<div id="wrap7">
+    <p class="txt7">1</p>
+    <p class="txt7">2</p>
+    <p class="txt7">3</p>
+    <p class="txt7">4</p>
+    <p class="txt7">5</p>
+    <p class="btn_wrap7">
+        <input type="button" class="btn7_1" value="실행">
+        <input type="button" class="btn7_2" value="재시작">
+    </p>
+</div><!--wrap7-->
+<hr>
+
+<div id="wrap8">
+    <p> 과목 선택 : <br>
+        <input type="checkbox" name="chk8" value="HTML" id="chk8_1">
+        <label for="chk8_1">HTML</label>
+        <input type="checkbox" name="chk8" value="CSS" id="chk8_2">
+        <label for="chk8_2">CSS</label>
+        <input type="checkbox" name="chk8" value="JAVASCRIPT" id="chk8_3">
+        <label for="chk8_3">JAVASCRIPT</label>
+        <input type="checkbox" name="chk8" value="JQUERY" id="chk8_4">
+        <label for="chk8_4">JQUERY</label>
+        <input type="checkbox" name="chk8" value="웹디자인" id="chk8_5">
+        <label for="chk8_5">웹디자인</label>
+    </p>
+    <p>
+        <textarea cols="20" rows="10" class="txt8"></textarea>
+    </p>
+</div><!--wrap8-->
+<hr>
+
+<form action="#" method="post" id="wrap9">
+    <p>
+        <label for="">주문자 정보와 동일</label>
+        <input type="checkbox" id="chk_all">
+    </p>
+    <fieldset id="order1">
+        <legend>주문자 정보</legend>
+        <ol>
+            <li><label>이름</label><input type="text" class="order_t"></li>
+            <li><label>연락처</label><input type="tel" class="order_t"></li>
+            <li><label>이메일</label><input type="email" class="order_t"></li>
+        </ol>
+    </fieldset><!--order1-->
+    <fieldset id="order2">
+        <legend>배송지 정보</legend>
+        <ol>
+            <li><label>이름</label><input type="text" class="order_t"></li>
+            <li><label>연락처</label><input type="tel" class="order_t"></li>
+            <li><label>이메일</label><input type="email" class="order_t"></li>
+        </ol>
+    </fieldset><!--order2-->
+</form>
+<hr>
+
+<div id="wrap10">
+    <p>
+        <span class="txt10_1">1</span>
+        <span class="txt10_2">2</span>
+        <span class="txt10_2">3</span>
+        <span class="txt10_1">4</span>
+        <span class="txt10_2">5</span>
+        <span class="txt10_1">6</span>
+    </p>
+    <p>
+        <input type="button" class="btn10_1" value="실행1">
+        <input type="button" class="btn10_2" value="실행2">
+        <input type="button" class="btn10_3" value="실행3">
+        <input type="button" class="btn10_4" value="실행4">
+        <input type="button" class="btn10_5" value="실행5">
+        <input type="button" class="btn10_6" value="초기화">
+    </p>
+</div><!--wrap10-->
+<hr>
+
+<div id="wrap11">
+    <p>
+        <span class="txt11">1</span>
+        <span class="txt11">2</span>
+        <span>3</span>
+        <span class="txt11">4</span>
+        <span>5</span>
+        <span class="txt11">6</span>
+    </p>
+</div><!--wrap11-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

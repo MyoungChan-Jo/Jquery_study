@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+<title>이미지변경/플러그인</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script>
+    $(document).ready(function(){
+        /*
+        http://bxslider.com/options
+        auto 슬아이드 자동여부 true/false
+        mode 슬라이드 이동방향 horizontal/vertical,fade
+        controls 이전/다음버튼의 노출여부 true/false
+        speed 전환시 속도
+        pager 현재위치 알리는 동그라미버튼 노출여부 true/false
+        slider.stopAuto(); 자동중지
+        slider.startAuto(); 자동시작
+        */
+        //s_banner_wrap
+        
+        var slider = $(".bxslider").bxSlider({ //1
+            auto:true, mode:'fade',
+        });
+        
+        var slider1 = $(".bxslider_01").bxSlider({ //2
+            auto:true, mode:'horizontal',
+        });
+        
+        var slider2 = $(".bxslider_02").bxSlider({ //3
+            auto:true, mode:'fade', pagerCustom:'#bx-pager1',
+        });
+        
+        var slider3 = $(".bxslider_03").bxSlider({ //4
+            auto:true, mode:'horizontal', pager:false,
+        });
+        
+        var slider4 = $(".bxslider_04").bxSlider({ //5
+            auto:true, mode:'fade', controls:false,
+        });
+        
+        $(document).on('click','.bx-prev, .bx-next','#bx-pager1',function(){
+            slider.stopAuto();
+            slider.startAuto();
+            slider1.stopAuto();
+            slider1.startAuto();
+            slider2.stopAuto();
+            slider2.startAuto();
+            slider3.stopAuto();
+            slider3.startAuto();
+            slider4.stopAuto();
+            slider4.startAuto();
+        });
+        $(document).on('mouseover','.bx-pager','#bx-pager1',function(){
+            slider.stopAuto();
+            slider.startAuto();
+            slider1.stopAuto();
+            slider1.startAuto();
+            slider2.stopAuto();
+            slider2.startAuto();
+            slider3.stopAuto();
+            slider3.startAuto();
+            slider4.stopAuto();
+            slider4.startAuto();
+        });
+        
+    });
+</script>
+<style>
+    *{margin:0; padding:0;}
+    ul,li{list-style:none;}
+    a{text-decoration:none;}
+    .s_banner_wrap{margin:20px; width:300px; height:150px; position:relative;}
+    .banner_01{width:300px; height:150px; background-color:orange;}
+    .banner_02{width:300px; height:150px; background-color:green;}
+    .banner_03{width:300px; height:150px; background-color:blue;}
+    .banner_04{width:300px; height:150px; background-color:pink;}
+    
+    #bx-pager1{position:absolute; left:50%; bottom:10px; transform:translate(-50%,0); overflow:hidden;}
+    #bx-pager1 a{float:left; width:20px; height:20px; display:block; background-color:#999999; color:#333333; margin:0 2px; border-radius:50%; font-size:12px; text-align:center; line-height:20px;}
+    #bx-pager1 a:hover, #bx-pager1 a:active{background-color:#000000; color:#cccccc;}
+    #bx-pager1 a.active{background-color:#000000; color:#cccccc;}
+</style>
+</head>
+<body>
+<div class="s_banner_wrap">
+    <ul class="bxslider">
+        <li class="banner_01">1</li>
+        <li class="banner_02">2</li>
+        <li class="banner_03">3</li>
+        <li class="banner_04">4</li>
+    </ul><!--bxslider-->
+</div><!--s_banner_wrap-->
+<hr>
+<div class="s_banner_wrap">
+    <ul class="bxslider_01">
+        <li class="banner_01">1</li>
+        <li class="banner_02">2</li>
+        <li class="banner_03">3</li>
+        <li class="banner_04">4</li>
+    </ul><!--bxslider_01-->
+</div><!--s_banner_wrap-->
+<hr>
+<div class="s_banner_wrap">
+    <ul class="bxslider_02">
+        <li class="banner_01">1</li>
+        <li class="banner_02">2</li>
+        <li class="banner_03">3</li>
+        <li class="banner_04">4</li>
+    </ul><!--bxslider_02-->
+    <p id="bx-pager1">
+        <a data-slide-index="0" href="#">1</a>
+        <a data-slide-index="1" href="#">2</a>
+        <a data-slide-index="2" href="#">3</a>
+        <a data-slide-index="3" href="#">4</a>
+    </p><!--bx-pager1-->
+</div><!--s_banner_wrap-->
+<hr>
+<div class="s_banner_wrap">
+    <ul class="bxslider_03">
+        <li class="banner_01">1</li>
+        <li class="banner_02">2</li>
+        <li class="banner_03">3</li>
+        <li class="banner_04">4</li>
+    </ul><!--bxslider_03-->
+</div><!--s_banner_wrap-->
+<hr>
+<div class="s_banner_wrap">
+    <ul class="bxslider_04">
+        <li class="banner_01">1</li>
+        <li class="banner_02">2</li>
+        <li class="banner_03">3</li>
+        <li class="banner_04">4</li>
+    </ul><!--bxslider_04-->
+</div><!--s_banner_wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scrollTop</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<style>
+    body,p{margin:0; padding:0;}
+    body{height:1600px;}
+    .txt{position:fixed; left:0; top:0;}
+    #contents{position:fixed; left:0; top:100px;}
+    .s_txt{background-color:pink;}/*js*/
+</style>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){//스크롤 이벤트, 스크롤할 때 발생
+            $(".txt").text($(this).scrollTop());
+            if($(this).scrollTop()>100){
+                $("#contents").addClass("s_txt");
+            }else{
+                $("#contents").removeClass("s_txt");
+            }
+        });
+        
+        
+    });
+</script>
+</head>
+<body>
+<p class="txt">.</p>
+<p id="contents">내용입니다.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

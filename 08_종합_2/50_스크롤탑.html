@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>스크롤탑</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //$(selector).scrollLeft() - selector 가로 스크롤 값
+        //$(selector).scrollTop() - selector 세로 스크롤 값
+        $(window).scroll(function(){
+            $(".txt").text($(this).scrollTop());
+        });
+        
+        
+        
+    });
+</script>
+<style>
+    *{margin:0; padding:0;}
+    p{position:fixed; top:0; left:200px;}
+    div{width:100px; height:100px; border:1px solid pink; box-sizing:border-box;}
+</style>
+</head>
+<body>
+<p>화면높이 : <span class="txt"></span></p>
+<div>0px</div>
+<div>100px</div>
+<div>200px</div>
+<div>300px</div>
+<div>400px</div>
+<div>500px</div>
+<div>600px</div>
+<div>700px</div>
+<div>800px</div>
+<div>900px</div>
+<div>1000px</div>
+<div>1100px</div>
+<div>1200px</div>
+<div>1300px</div>
+<div>1400px</div>
+<div>1500px</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

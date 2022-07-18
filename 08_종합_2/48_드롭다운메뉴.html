@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>드롭다운메뉴</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+    
+    body{font:normal 12px/1.5em "nanum",sans-serif; color:#333333;}
+    a{color:#333333;}
+    
+    @font-face{
+		font-family:nanum;
+		src:url('font/NanumGothic.eot');
+		src:url('font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('font/NanumGothic.ttf')format('truetype'),
+				url('font/NanumGothic.woff')format('woff');}
+    
+    /* top_navi */
+    
+    #top_navi{width:960px; height:33px; margin:50px;}
+    #top_navi > ul{width:960px; height:33px;}
+    #top_navi > ul > li{float:left; width:160px; height:33px; text-align:center; line-height:33px; position:relative; transition:all 0.3s;}
+    #top_navi > ul > li:hover{background-color:#333333;}
+    #top_navi > ul > li:hover > a{color:#ffffff;}
+    #top_navi > ul > li > a{color:#000000; font-size:16px; width:160px; height:33px; display:block;}
+    #top_navi > ul > li > ul{position:absolute; left:0; top:33px; width:160px;}
+    #top_navi > ul > li > ul > li{background-color:#5d7e6a; width:160px; height:30px;}
+    #top_navi > ul > li > ul > li >a{width:160px; height:30px; display:block; color:#333333;}
+    #top_navi > ul > li > ul > li >a:hover{background-color:#999933; color:#eaeaea;}
+    
+</style>
+<script>
+    $(document).ready(function(){
+        //top_navi
+        
+        $(".submenu").hide();
+        $("#top_navi > ul > li").mouseover(function(){
+            $("#top_navi > ul > li").children("ul").hide();
+            $(this).children("ul").stop().slideDown("fast");
+        }).mouseout(function(){
+            $(this).children("ul").stop().slideUp();
+        });
+        
+        
+        
+        
+    });
+</script>
+</head>
+<body>
+<nav id="top_navi">
+
+<ul id="menu">
+
+	<li><a href="#">회사소개</a>
+	
+		<ul class="submenu">
+		
+			<li><a href="#">개요</a></li>
+			
+			<li><a href="#">경영이념</a></li>
+			
+			<li><a href="#">CEO 인사말</a></li>
+			
+			<li><a href="#">CI</a></li>
+			
+			<li><a href="#">연혁</a></li>
+			
+			<li><a href="#">사업장 안내</a></li>
+	
+		</ul>
+	
+	</li><!-- 회사소개 -->
+
+<li><a href="#">사업소개 </a>
+
+<ul class="submenu">
+
+<li><a href="#">공작기계</a></li>
+
+<li><a href="#">자동차부품</a></li>
+
+<li><a href="#">방위산업</a></li>
+
+<li><a href="#">산업기계</a></li>
+
+</ul> 
+
+</li><!-- 사업소개 -->
+
+<li><a href="#">투자정보 </a>
+
+<ul class="submenu">
+
+<li><a href="#">경영정보</a></li>
+
+<li><a href="#">재무정보</a></li>
+
+<li><a href="#">IR 정보</a></li>
+
+<li><a href="#">전자공고</a></li>
+
+<li><a href="#">주가정보</a></li>
+
+<li><a href="#">공시자료</a></li> 
+
+</ul>
+
+</li><!--투자정보 -->
+
+<li><a href="#">지속가능경영 </a>
+
+<ul class="submenu">
+
+<li><a href="#">사회공헌</a></li>
+
+<li><a href="#">동반성장</a></li>
+
+<li><a href="#">신뢰경영</a></li>
+
+<li><a href="#">안전환경경영</a></li>
+
+</ul>
+
+</li><!--지속가능경영 -->
+
+<li><a href="#">PR센터 </a>
+
+<ul class="submenu">
+
+<li><a href="#">뉴스</a></li>
+
+<li><a href="#">사보</a></li>
+
+<li><a href="#">광고</a></li>
+
+<li><a href="#">PR자료실</a></li>
+
+</ul>
+
+</li><!--PR센터 -->
+
+<li><a href="#">고객지원</a>
+
+<ul class="submenu">
+
+<li><a href="#">자주하는 질문</a></li>
+
+<li><a href="#">질문하기</a></li>
+
+<li><a href="#">공장견학</a></li>
+
+<li><a href="#">인증현황</a></li>
+
+</ul> 
+
+</li><!-- 고객지원-->
+
+</ul><!-- menu -->
+
+</nav><!-- top_navi 메뉴-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
