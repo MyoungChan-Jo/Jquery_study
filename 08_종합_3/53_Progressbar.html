@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Progressbar</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/jQuery.rProgressbar.min.js"></script>
+<style>
+    body,div,p{margin:0; padding:0;}
+    body{font:normal 12px/1.5em "맑은 고딕",sans-serif;}
+    
+    #probar_wrap{margin:50px; width:450px; height:250px;}
+    #probar_line{width:450px; height:250px;}
+    .probar_title{font-size:14px; color:#777777;}/*가습..*/
+    .proggress{height:20px; width:10px; margin:10px 0;}/*수정x*/
+    .percentCount{float:right; margin-top:-50px; font-size:13px; color:#777777;}
+    
+</style>
+<script>
+    $(document).ready(function(){
+        $(".humi").rProgressbar({
+            percentage : 80,
+            fillBackgroundColor : 'orange'
+        });
+        $(".dust01").rProgressbar({
+            percentage : 99,
+            fillBackgroundColor : 'orange'
+        });
+        $(".dust02").rProgressbar({
+            percentage : 99,
+            fillBackgroundColor : 'orange'
+        });
+        $(".gas").rProgressbar({
+            percentage : 94,
+            fillBackgroundColor : 'orange'
+        });
+    });
+</script>
+</head>
+<body>
+<div id="probar_wrap">
+    <div id="probar_line">
+        <div class="single_profressbar">
+            <p class="probar_title">가 습</p>
+            <div class="humi">80%</div>
+        </div><!--single_profressbar-->
+        
+        <div class="single_profressbar">
+            <p class="probar_title">미 세 먼 지</p>
+            <div class="dust01">99%</div>
+        </div><!--single_profressbar-->
+        
+        <div class="single_profressbar">
+            <p class="probar_title">초 미 세 먼 지</p>
+            <div class="dust02">99%</div>
+        </div><!--single_profressbar-->
+        
+        <div class="single_profressbar">
+            <p class="probar_title">유 해 가 스</p>
+            <div class="gas">94%</div>
+        </div><!--single_profressbar-->
+    </div><!--probar_line-->
+</div><!--probar_wrap-->
+</body>
+</html>

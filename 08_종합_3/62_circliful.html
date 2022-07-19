@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>proggressbar_circliful(원형)</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<style>
+    div,p{margin:0; padding:0;}
+    
+    #wrap{width:600px; height:300px; margin:30px; border:1px solid #cccccc;}
+    #wrap p{float:left; width:300px; height:300px;}
+</style>
+<script>
+    $(document).ready(function(){
+        //circle1
+        
+        $("#circle1").circliful({
+            animation : 1, //애니메이션 실행 1:실행, 2:실행안함
+            animationStep : 5, //애니메이션 속도 (낮은 숫자일수록 천천히)
+            foregroundBorderWidth : 10, //전경 선 두께(안쪽 선)
+            foregroundColor : "orange", //전경 선색
+            backgroundBorderWidth : 20, //배경 선 두께
+            percent : 80, //퍼센트 수치
+            fontColor : "orange",
+            percentageTextSize : 30,
+            
+        });
+        
+        //circle2
+        
+        $("#circle2").circliful({
+            animation : 1, //애니메이션 실행 1:실행, 2:실행안함
+            animationStep : 2, //애니메이션 속도 (낮은 숫자일수록 천천히)
+            foregroundBorderWidth : 5, //전경 선 두께(안쪽 선)
+            foregroundColor : "#9966cc", //전경 선색
+            backgroundBorderWidth : 10, //배경 선 두께
+            percent : 70, //퍼센트 수치
+            fontColor : "#9966cc",
+            backgroundColor: "pink",
+            
+        });
+    });
+</script>
+</head>
+<body>
+<div id="wrap">
+    <p id="circle1">HTML5</p>
+    <p id="circle2">JQUERY</p>
+</div><!--wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

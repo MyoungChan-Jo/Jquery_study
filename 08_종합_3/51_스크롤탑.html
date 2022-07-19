@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scrollTop</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<style>
+    body,div{margin:0; padding:0;}
+    #menu{position:fixed; left:0; top:0; width:100%; height:30px; background-color:pink;}
+    #contents{height:3000px; line-height:3000px; text-align:center;}
+</style>
+<script>
+    $(document).ready(function(){
+        var auto = setInterval(function(){
+            var scroll_i = $(window).scrollTop();
+            var top1 = 0;
+            var marginTop1 = 0;
+            if(scroll_i >= 500){
+                top1 = "100%";
+                marginTop1 = -30;
+            }else{
+                   
+            }
+            $("#menu").animate({top:top1,marginTop:marginTop1},1000);
+        },1000);
+        
+        
+        
+    });
+</script>
+</head>
+<body>
+<div id="menu">menu</div>
+<div id="contents">내용입니다.</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

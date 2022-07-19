@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>동영상(scrolltop)</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<style>
+    .test{height:700px;}
+</style>
+<script>
+    $(document).ready(function(){
+        $("#movie").before("<p class='txt'>0</p>");
+        $(".txt").css({"position":"fixed","left":"10%","top":"10%","color":"red"});
+        
+        var i = $("#movie video").get(0);
+        
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            $(".txt").text($(this).scrollTop()); //임시출력
+            if(scroll > 300 && scroll <= 700){
+                i.play();
+            }else{
+                i.pause();
+            }
+        });
+    });
+</script>
+</head>
+<body>
+<div class="test">.</div>
+<div id="movie">
+    <video width="400" height="300" loop muted poster="images/m_bg.jpg">
+        <source src="media/spring.mp4" type="video/mp4">
+        <source src="media/spring.webm" type="video/webm">
+    </video>
+</div><!--movie-->
+<div class="test">.</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

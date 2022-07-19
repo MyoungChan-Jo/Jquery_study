@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>mousewheel</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<style>
+    @charset "utf-8";
+
+    /* reset */
+    
+    body,div,p,img{margin:0; padding:0;}
+    
+    /* wrap */
+    
+    #wrap{width:502px; height:282px; margin:100px;}
+    #wrap p{width:500px; height:280px; border:1px solid #333333;}
+    
+</style>
+<script>
+    $(document).ready(function(){
+        //wrap
+        
+        $("#wrap").on("mousewheel",function(event,delta){
+            //console.log(delta); 위 1 아래 -1
+            if(delta > 0){ //휠 위로
+                $("#wrap p img").attr("src","images/img12_l.jpg");
+            }else{ //휠 아래로
+                $("#wrap p img").attr("src","images/img10_l.jpg");
+            }
+        });
+        
+        
+        
+        
+    });
+</script>
+</head>
+<body>
+<div id="wrap">
+    <p><img src="images/img10_l.jpg" alt="#" width="500" height="280"></p>
+</div><!--wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
